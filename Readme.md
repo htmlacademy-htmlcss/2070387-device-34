@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Владимир Рудченко](https://up.htmlacademy.ru/htmlcss/34/user/2070387).
-* Наставник: [Дмитрий Рябинин](https://htmlacademy.ru/profile/haschish)
+* Наставник: [Дмитрий Рябинин](https://up.htmlacademy.ru/htmlcss/34/user/63289)
 
 ---
 
