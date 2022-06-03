@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -129,33 +130,27 @@
 
       <ul class="catalog-links-list">
         <li class="catalog-links-item">
-          <h3 class="visually-hidden">Очки виртуальной реальности</h3>
-          <a class="vector-img-link" href="#"><img src="images\main\nav-1.png" width="160" height="253" alt="Очки виртуальной реальности"></a>
+          <a class="catalog-link" href="#">Виртуальная реальность</a>
         </li>
 
         <li class="catalog-links-item">
-          <h3 class="visually-hidden">Моноподы</h3>
-          <a class="vector-img-link" href="#"><img src="images\main\nav-2.png" width="160" height="253" alt="Моноподы"></a>
+          <a class="catalog-link" href="#">Моноподы для селфи</a>
         </li>
 
         <li class="catalog-links-item">
-          <h3 class="visually-hidden">Экшн-камеры</h3>
-          <a class="vector-img-link" href="#"><img src="images\main\nav-3.png" width="160" height="253" alt="Экшн-камера"></a>
+          <a class="catalog-link" href="#">Экшн-камеры</a>
         </li>
 
         <li class="catalog-links-item">
-          <h3 class="visually-hidden">Фитнес-браслеты</h3>
-          <a class="vector-img-link" href="#"><img src="images\main\nav-4.png" width="160" height="253" alt="Фитнес-браслет"></a>
+          <a class="catalog-link" href="#">Фитнес-браслеты</a>
         </li>
 
         <li class="catalog-links-item">
-          <h3 class="visually-hidden">Умные часы</h3>
-          <a class="vector-img-link" href="#"><img src="images\main\nav-5.png" width="160" height="253" alt="Умные часы"></a>
+          <a class="catalog-link" href="#">Умные часы</a>
         </li>
 
         <li class="catalog-links-item">
-          <h3 class="visually-hidden">Квадрокоптеры</h3>
-          <a class="vector-img-link" href="#"><img src="images\main\nav-6.png" width="160" height="253" alt="Квадрокоптер"></a>
+          <a class="catalog-link" href="#">Квадрокоптеры</a>
         </li>
       </ul>
     </nav>
@@ -169,19 +164,16 @@
       </ul>
       <div class="delivery">
         <h3 class="delivery-header">Доставка</h3>
-        <img src="images\main\delivery_man.png" width="136" height="164" alt="Доставка товара">
         <p class="delivery-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
           бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </div>
       <div class="warranty">
         <h3 class="warranty-header">Гарантия</h3>
-        <img src="images\main\warranty.png" width="171" height="195" alt="Гарантийное обслуживание">
         <p class="warranty-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
           мы выдадим вам новый. Товар, не дом, конечно же.</p>
       </div>
       <div class="credit">
         <h3 class="credit-header">Кредит</h3>
-        <img src="images\main\credit.png" width="156" height="188" alt="Кредит">
         <p class="credit-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
           наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
       </div>
@@ -189,9 +181,9 @@
 
     <section class="rare-goods-order">
       <h2 class="visually-hidden">Заказ редких товаров</h2>
-      <a class="rare-goods-order-link-button" href="#">
-        <img class="rare-goods-order-link-img" src="images\main\delivery.svg" width="1160" height="100" alt="Кнопка заказа редких товаров">
-      </a>
+      <div class="rare-goods-order-img">
+      <a class="rare-goods-order-link-button" href="#">Доставим редкий товар под заказ</a>
+      </div>
     </section>
 
     <section class="about-company">
@@ -266,19 +258,13 @@
       <h3 class="visually-hidden">Ссылки на социальные сети</h3>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button-footer-social" href="tg://resolve?domain=htmlacademy">
-            <img class="telegram-img" src="images\footer\telegram.png" width="40" height="40" alt="Телеграм">
-          </a>
+          <a class="button-footer-social" href="tg://resolve?domain=htmlacademy">Telegram</a>
         </li>
         <li class="footer-social-item">
-          <a class="button-footer-social" href="https://www.youtube.com/user/htmlacademyru">
-            <img class="youtube-img" src="images\footer\youtube.png" width="40" height="40" alt="Ютуб">
-          </a>
+          <a class="button-footer-social" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
         </li>
         <li class="footer-social-item">
-          <a class="button-footer-social" href="https://twitter.com/htmlacademy_ru">
-            <img class="twitter-img" src="images\footer\twitter.png" width="40" height="40" alt="Твиттер">
-          </a>
+          <a class="button-footer-social" href="https://twitter.com/htmlacademy_ru">Twitter</a>
         </li>
       </ul>
     </div>
@@ -288,7 +274,6 @@
         <img class="htmlacademy-img" src="images\footer\html_academy.png" width="114.9" height="32.9" alt="Логотип HTML-Academy">
       </a>
     </div>
-    <img class="footer-img" src="images\footer\rectangle_little_yellow.svg" width="80" height="7" alt="Векторная графика">
   </footer>
 </body>
 </html>
