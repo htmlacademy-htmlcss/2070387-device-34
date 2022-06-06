@@ -4,10 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header class="page-header">
+    <div class="catalog-header-background"></div>
     <a class="index-link" href="index.html">
       <img class="main-logo" src="images\header\logo_black.png" width="145" height="36" alt="Логотип сайта Девайс">
     </a>
@@ -21,30 +24,30 @@
       <button class="open-folder"><span class="visually-hidden">Открыть список</span></button>
     </div>
 
-      <ul class="navigation-list navigation-user">
+      <ul class="navigation-user">
         <li class="navigation-item">
-          <a class="navigation-entrance" href="#">Коля Петухов</a>
+          <a class="user-link user-name" href="#">Коля Петухов</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-entrance-exit" href="#">Выйти</a>
+          <a class="user-link" href="#">Выйти</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-compare" href="#">Сравнить</a>
+          <a class="user-link" href="#">Сравнить</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-shopping-basket" href="#">Корзина</a>
+          <a class="user-link" href="#">Корзина</a>
         </li>
       </ul>
     
-      <ul class="navigation-list navigation-main">
+      <ul class="navigation-main">
         <li class="navigation-item">
-          <a class="navigation-delivery" href="#">Доставка</a>
+          <a class="service-link" href="#">Доставка</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-warranty" href="#">Гарантия</a>
+          <a class="service-link" href="#">Гарантия</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-contacs" href="#">Контакты</a>
+          <a class="service-link" href="#">Контакты</a>
         </li>
       </ul>
   </header>
@@ -70,66 +73,67 @@
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
         <fieldset class="catalog-filter-group-price">
-          <legend class="catalog-filter-title">Стоимость</legend>
-          
+          <legend class="catalog-filter-title"><span class="legend-text">Стоимость</span></legend>
         </fieldset>
 
         <fieldset class="catalog-filter-group-color">
-          <legend class="catalog-filter-title">Цвет</legend>
+          <legend class="catalog-filter-title"><span class="legend-text">Цвет</span></legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-list">
               <label class="control">
-                <input class="control-input" type="checkbox" name="color-black" checked>Черный</label>
+                <input class="control-input" type="checkbox" name="color-black" checked><span class="color-text">Черный</span></label>
             </li>
 
             <li class="catalog-filter-list">
               <label class="control">
-                <input class="control-input" type="checkbox" name="color-white" checked>Белый</label>
+                <input class="control-input" type="checkbox" name="color-white" checked><span class="color-text">Белый</span></label>
             </li>
 
             <li class="catalog-filter-list">
               <label class="control">
-                <input class="control-input" type="checkbox" name="color-blue">Синий</label>
+                <input class="control-input" type="checkbox" name="color-blue"><span class="color-text">Синий</span></label>
             </li>
 
             <li class="catalog-filter-list">
               <label class="control">
-                <input class="control-input" type="checkbox" name="color-red">Красный</label>
+                <input class="control-input" type="checkbox" name="color-red"><span class="color-text">Красный</span></label>
             </li>
 
             <li class="catalog-filter-list">
               <label class="control">
-                <input class="control-input" type="checkbox" name="color-pink">Розовый</label>
+                <input class="control-input" type="checkbox" name="color-pink"><span class="color-text">Розовый</span></label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="catalog-filter-group-bluetooth">
-          <legend class="catalog-filter-title">Bluetooth</legend>
+          <legend class="catalog-filter-title"><span class="legend-text">Bluetooth</span></legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="radio" name="Bluetooth" value="yes" checked>
-                Есть
+                <span class="bluetooth-text">Есть</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="radio" name="Bluetooth" value="no">
-                Нет
+                <span class="bluetooth-text">Нет</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <button class="button" type="submit">Показать</button>
+        <button class="button" type="submit"> <span class="show-button">Показать</span></button>
       </form>
     </section>
     
     <section class="catalog-products">
       <h2 class="sorting-header">Сортировка:</h2>
       <select class="select-control">
-        <option value="popular">Популярные</option>
+        <option value="popular">
+         <span class="popular-text">Популярные</span>
+        </option>
       </select>
       <a class="button-start" href="#">
         <span class="visually-hidden">Показать с начала</span>
@@ -170,11 +174,13 @@
           <b class="product-card-price">1 500 ₽</b>
         </li>
       </ul>
-      <button class="button pagination-download-more" type="button">Загрузить ещё</button>
+      <button class="button pagination-download-more" type="button">
+       <span class="download-more-button-text">Загрузить ещё</span>
+      </button>
 
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-prev pagination-disabled" href="#">Назад</a>
+          <a class="pagination-prev pagination-disabled" href="#">Назад</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -186,13 +192,13 @@
           <a class="pagination-link" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-ellipsis" href="#">...</a>
+          <a class="pagination-link pagination-ellipsis" href="#">...</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">15</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#">Вперёд</a>
+          <a class="pagination-next" href="#">Вперёд</a>
         </li>
       </ul>
     </section>
@@ -219,19 +225,13 @@
       <h3 class="visually-hidden">Ссылки на социальные сети</h3>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button-footer-social" href="#">
-            <img class="telegram-img" src="images\footer\telegram.png" width="40" height="40" alt="Телеграм">
-          </a>
+          <a class="button-footer-telegram" href="tg://resolve?domain=htmlacademy"><span class="visually-hidden">Telegram</span></a>
         </li>
         <li class="footer-social-item">
-          <a class="button-footer-social" href="#">
-            <img class="youtube-img" src="images\footer\youtube.png" width="40" height="40" alt="Ютуб">
-          </a>
+          <a class="button-footer-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a>
         </li>
         <li class="footer-social-item">
-          <a class="button-footer-social" href="#">
-            <img class="twitter-img" src="images\footer\twitter.png" width="40" height="40" alt="Твиттер">
-          </a>
+          <a class="button-footer-twitter" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Twitter</span></a>
         </li>
       </ul>
     </div>
@@ -241,7 +241,6 @@
         <img class="htmlacademy-img" src="images\footer\html_academy.png" width="114.9" height="32.9" alt="Логотип HTML-Academy">
       </a>
     </div>
-    <img class="footer-img" src="images\footer\rectangle_little_yellow.svg" width="80" height="7" alt="Векторная графика">
   </footer>
 </body>
 </html>
